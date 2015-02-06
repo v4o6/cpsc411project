@@ -1,0 +1,268 @@
+/**
+ * JavaCC file
+ */
+ 
+options {
+  JDK_VERSION = "1.6";
+  STATIC = false;
+}
+PARSER_BEGIN(JCCFunctionsParser)
+package parser.jcc;
+
+import ast.*;
+import java.util.ArrayList;
+import java.util.List;
+
+public class JCCFunctionsParser {
+}
+
+PARSER_END(JCCFunctionsParser)
+
+SKIP :
+{
+ 	" "
+|	"\r"
+|	"\t"
+|	"\n"
+|	< MULTI_LINE_COMMENT: "/*" (~["*"])* "*" ("*" | ~["*","/"] (~["*"])* "*")* "/" >
+|   < SINGLE_LINE_COMMENT: "//" (~["\n"])* >
+}
+
+TOKEN : /* KEYWORDS */
+{	
+	< PRINT:		"print" >
+| 	< RETURN:		"return" >
+}
+
+TOKEN : /* TYPES */
+{	< TYPE:	 ("int" | "boolean")>
+}
+
+TOKEN : /* SEPARATORS and OPERATORS*/
+{	< LPAREN: "(" >
+|	< RPAREN: ")" >
+|	< ASSIGN: "=" >
+|	< QUESTION:	 "?" >
+|	< COLON:	 ":" >
+|	< PLUS:	 "+" >
+|	< MINUS:  "-" >
+|	< MULT:   "*" >
+|	< SMALLER:"<" >
+|	< NOT:	 "!" >
+| 	< SEMICOLON:	 ";" >
+| 	< LBRACKET:	 "{" >
+| 	< RBRACKET:	 "}" >
+| 	< COMMA:	 "," >
+}
+	
+TOKEN :
+{   < INTEGER_LITERAL: ( <DIGIT> )+ >
+|   < IDENTIFIER: <LETTER> (<LETTER> | "_" | <DIGIT>)* >
+|   < #LETTER: ["A" - "Z", "a" - "z"] >
+|   < #DIGIT: ["0" - "9"] >
+}
+
+Program Program() : { 
+	NodeList<Statement> ss = new NodeList<Statement>();
+	Statement s; 
+	Expression e;
+}
+{
+	( s=Statement()
+		{ ss.add(s); } 
+	)*
+	< PRINT > e = Expression()
+	<EOF>
+		{ return new Program(ss, new Print(e)); }
+}
+
+Statement Statement() : {
+	Statement s = null; //TODO: should not be null ever!
+}
+{
+	s=FunctionDeclaration()	
+		{ return s; }		
+}
+
+Statement FunctionDeclaration() : {
+	Type type;
+	String name;
+	FormalList params;
+	NodeList<Statement> statements = new NodeList<Statement>();
+	Statement s;
+	Expression value;
+}
+{	(	type=Type()
+	  	name=Identifier()
+		< LPAREN >
+		params=FormalList()
+		< RPAREN >
+		< LBRACKET >
+		( s=Assign()
+			{ statements.add(s); }
+		)*
+		< RETURN >
+		value = Expression()
+		< SEMICOLON >
+		< RBRACKET >
+			{ return new FunctionDeclaration(type, name, params, statements, value); }
+	)
+| 	s=Assign()
+		{ return s; }
+}
+
+Statement Assign() : {
+	String name;
+	Expression value;
+}
+{	name=Identifier() 
+	"="
+	value=Expression() ";"
+		{return new Assign(name, value); }
+}
+
+Expression Expression() : {
+	Expression e, e2, e3;
+}
+{	e=CompExpression() 
+	(	"?" e2 = Expression()
+	 	":" e3 = Expression()
+			{	e = new Conditional(e, e2, e3); }
+	)?
+		{ return e; }
+}
+
+// For parsing anything with priority same or higher than <
+Expression CompExpression() : {
+	Expression e, e2;
+}
+{ 	e=AddExpression() 
+	(	"<" e2=AddExpression() 
+			{ e = new LessThan(e, e2); }
+	)?
+		{ return e; }
+}
+// For parsing anything with priority same or higher than +
+Expression AddExpression() : {
+	Expression e, e2;
+	Token op;
+}
+{	e=MultExpression() 
+	( 	(op="+"|op="-") 
+		e2=MultExpression() 
+		{	if (op.image.equals("+"))
+				e=new Plus(e, e2);
+			else
+				e=new Minus(e, e2);
+		}
+	)*
+		{ return e; }
+}
+
+// For parsing anything with priority same or higher than *
+Expression MultExpression() :  {
+	Expression e, e2;
+}
+{	e=NotExpression() 
+	(	"*" e2=NotExpression()
+		{ e = new Times(e, e2); } 
+	)*
+		{ return e; }
+}
+
+// For parsing anything with priority same or higher than ! expressions:
+Expression NotExpression() : {
+	Expression e;
+}
+{ 	"!" e=NotExpression()
+		{ return new Not(e); }
+| 	e=PrimaryExpression()
+		{ return e; }
+}
+        
+/* PrimaryExpression is the expression that has highest precedence.*/
+Expression PrimaryExpression() : {
+	Token t;
+	Expression e;
+}
+{ t=<INTEGER_LITERAL>					{ return new IntegerLiteral(t.image); }
+| e=IdentifierPrime()					{ return e; }
+| "(" e=Expression() ")"				{ return e; }
+}
+
+String Identifier() : {
+	Token i;
+}
+{
+	i = <IDENTIFIER>
+		{ return i.image; }
+}
+
+Type Type() : {
+	Token t;
+}
+{	t = < TYPE >
+		{ if (t.image.equals("int"))
+			return new IntegerType();
+		  else
+			return new BooleanType();
+		}
+}
+
+FormalList FormalList() : {
+	FormalList params = new FormalList();
+	Parameter p;
+}
+{	(	p=Parameter()
+			{ params.add(p); }
+		(	< COMMA >
+			p=Parameter()
+				{ params.add(p); }
+		)*
+	)?
+		{ return params; }
+}  
+
+Parameter Parameter() : {
+	Token t;
+	Type type;
+	String name;
+}
+{	t = < TYPE >
+		{ if (t.image.equals("int"))
+			type = new IntegerType();
+		  else
+			type = new BooleanType();
+		}
+	name=Identifier()
+		{ return new Parameter(type, name); }
+}
+
+Expression IdentifierPrime() : {
+  	String name;
+	Expression e;
+	ExpressionList args;
+}
+{	name=Identifier()
+		{ e = new IdentifierExp(name); }
+	(	< LPAREN >
+		args = ExpressionList()
+		< RPAREN >
+			{ e = new FunctionCall(name, args); }
+	)?
+		{ return e; }
+}
+
+ExpressionList ExpressionList() : {
+	ExpressionList args = new ExpressionList();
+	Expression e;
+}
+{	(	e=Expression()
+			{ args.add(e); }
+		(	< COMMA >
+			e=Expression()
+			{ args.add(e); }
+		)*
+	)?
+		{ return args; }
+}

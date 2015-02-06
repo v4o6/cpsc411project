@@ -1,0 +1,6 @@
+.metadata/
+*bin/
+*.svn/
+*.svn-base
+*.cvsignore
+*.class

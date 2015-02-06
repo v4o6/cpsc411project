@@ -1,0 +1,414 @@
+### BEG # TEST 1 ###
+---------------
+class Test {
+public static void main(String[] a) {
+System.out.println(10+9);}}
+vvvvvvvvvvvvvvv
+class Test{
+   public static void main (String [] a) {
+      System.out.println((10 + 9));
+   }
+}
+
+---------------
+class Test {
+public static void main(String[] a) {
+System.out.println(10-9);}}
+vvvvvvvvvvvvvvv
+class Test{
+   public static void main (String [] a) {
+      System.out.println((10 - 9));
+   }
+}
+
+---------------
+class Test {
+public static void main(String[] a) {
+System.out.println(10+9+8);}}
+vvvvvvvvvvvvvvv
+class Test{
+   public static void main (String [] a) {
+      System.out.println(((10 + 9) + 8));
+   }
+}
+
+---------------
+class Test {
+public static void main(String[] a) {
+System.out.println(10-9-8);}}
+vvvvvvvvvvvvvvv
+class Test{
+   public static void main (String [] a) {
+      System.out.println(((10 - 9) - 8));
+   }
+}
+
+---------------
+class Test {
+public static void main(String[] a) {
+System.out.println(len+len);}}
+vvvvvvvvvvvvvvv
+class Test{
+   public static void main (String [] a) {
+      System.out.println((len + len));
+   }
+}
+
+---------------
+class Test {
+public static void main(String[] a) {
+System.out.println(len-len);}}
+vvvvvvvvvvvvvvv
+class Test{
+   public static void main (String [] a) {
+      System.out.println((len - len));
+   }
+}
+
+---------------
+class Test {
+public static void main(String[] a) {
+System.out.println(foo+foo);}}
+vvvvvvvvvvvvvvv
+class Test{
+   public static void main (String [] a) {
+      System.out.println((foo + foo));
+   }
+}
+
+---------------
+class Test {
+public static void main(String[] a) {
+System.out.println(foo+(foo));}}
+vvvvvvvvvvvvvvv
+class Test{
+   public static void main (String [] a) {
+      System.out.println((foo + foo));
+   }
+}
+
+---------------
+class Test {
+public static void main(String[] a) {
+System.out.println(10+9+x*len-foo+array);}}
+vvvvvvvvvvvvvvv
+class Test{
+   public static void main (String [] a) {
+      System.out.println((((10 + 9) + ((x * len) - foo)) + array));
+   }
+}
+
+---------------
+class Test {
+public static void main(String[] a) {
+System.out.println((a-b)*(a+b));}}
+vvvvvvvvvvvvvvv
+class Test{
+   public static void main (String [] a) {
+      System.out.println(((a - b) * (a + b)));
+   }
+}
+
+### END # TEST 1 ###
+### BEG # TEST 2 ###
+---------------
+class Test {
+public static void main(String[] a) {
+System.out.println(!x);}}
+vvvvvvvvvvvvvvv
+class Test{
+   public static void main (String [] a) {
+      System.out.println(!x);
+   }
+}
+
+---------------
+class Test {
+public static void main(String[] a) {
+System.out.println(!!!!!!x);}}
+vvvvvvvvvvvvvvv
+class Test{
+   public static void main (String [] a) {
+      System.out.println(!!!!!!x);
+   }
+}
+
+### END # TEST 2 ###
+### BEG # TEST 3 ###
+---------------
+class Test {
+public static void main(String[] a) {
+System.out.println(10<9);}}
+vvvvvvvvvvvvvvv
+class Test{
+   public static void main (String [] a) {
+      System.out.println((10 < 9));
+   }
+}
+
+---------------
+class Test {
+public static void main(String[] a) {
+System.out.println(10+a*3<9-4+2);}}
+vvvvvvvvvvvvvvv
+class Test{
+   public static void main (String [] a) {
+      System.out.println(((10 + (a * 3)) < ((9 - 4) + 2)));
+   }
+}
+
+---------------
+class Test {
+public static void main(String[] a) {
+System.out.println(len<1);}}
+vvvvvvvvvvvvvvv
+class Test{
+   public static void main (String [] a) {
+      System.out.println((len < 1));
+   }
+}
+
+---------------
+class Test {
+public static void main(String[] a) {
+System.out.println(i<foo);}}
+vvvvvvvvvvvvvvv
+class Test{
+   public static void main (String [] a) {
+      System.out.println((i < foo));
+   }
+}
+
+---------------
+class Test {
+public static void main(String[] a) {
+System.out.println(10<9);}}
+vvvvvvvvvvvvvvv
+class Test{
+   public static void main (String [] a) {
+      System.out.println((10 < 9));
+   }
+}
+
+---------------
+class Test {
+public static void main(String[] a) {
+System.out.println(10+a*3<9-4+2);}}
+vvvvvvvvvvvvvvv
+class Test{
+   public static void main (String [] a) {
+      System.out.println(((10 + (a * 3)) < ((9 - 4) + 2)));
+   }
+}
+
+---------------
+class Test {
+public static void main(String[] a) {
+System.out.println(len<1);}}
+vvvvvvvvvvvvvvv
+class Test{
+   public static void main (String [] a) {
+      System.out.println((len < 1));
+   }
+}
+
+---------------
+class Test {
+public static void main(String[] a) {
+System.out.println(i<foo);}}
+vvvvvvvvvvvvvvv
+class Test{
+   public static void main (String [] a) {
+      System.out.println((i < foo));
+   }
+}
+
+### END # TEST 3 ###
+### BEG # TEST 4 ###
+---------------
+class Test {
+public static void main(String[] a) {
+System.out.println(10*9);}}
+vvvvvvvvvvvvvvv
+class Test{
+   public static void main (String [] a) {
+      System.out.println((10 * 9));
+   }
+}
+
+---------------
+class Test {
+public static void main(String[] a) {
+System.out.println(10*9*8);}}
+vvvvvvvvvvvvvvv
+class Test{
+   public static void main (String [] a) {
+      System.out.println(((10 * 9) * 8));
+   }
+}
+
+---------------
+class Test {
+public static void main(String[] a) {
+System.out.println(foo*len);}}
+vvvvvvvvvvvvvvv
+class Test{
+   public static void main (String [] a) {
+      System.out.println((foo * len));
+   }
+}
+
+---------------
+class Test {
+public static void main(String[] a) {
+System.out.println(10*9*8*7*x*y*foo);}}
+vvvvvvvvvvvvvvv
+class Test{
+   public static void main (String [] a) {
+      System.out.println(((((((10 * 9) * 8) * 7) * x) * y) * foo));
+   }
+}
+
+### END # TEST 4 ###
+### BEG # TEST 5 ###
+---------------
+class Test {
+public static void main(String[] a) {
+System.out.println(this);}}
+vvvvvvvvvvvvvvv
+class Test{
+   public static void main (String [] a) {
+      System.out.println(this);
+   }
+}
+
+### END # TEST 5 ###
+### BEG # TEST 6 ###
+---------------
+File: sample\Factorial.minijava
+### END # TEST 6 ###
+### BEG # TEST 7 ###
+---------------
+class Test {
+public static void main(String[] a) {
+System.out.println(1);}}
+vvvvvvvvvvvvvvv
+class Test{
+   public static void main (String [] a) {
+      System.out.println(1);
+   }
+}
+
+### END # TEST 7 ###
+### BEG # TEST 8 ###
+---------------
+class Test1 {
+public static void main(String[] a) {
+System.out.println(x());
+}
+}
+class Test2 {
+int a;
+bool b;
+int x() { return 1; }
+}
+
+### END # TEST 8 ###
+### BEG # TEST 9 ###
+---------------
+class Test1 {
+public static void main(String[] a) {
+System.out.println(func(0));
+}
+}
+class Test2 {
+int a;
+bool b;
+public int func(int c) {
+a = a + 1;
+return c;
+}
+}
+
+### END # TEST 9 ###
+### BEG # TEST 10 ###
+---------------
+class Test {
+public static void main(String[] a) {
+System.out.println((1));}}
+vvvvvvvvvvvvvvv
+class Test{
+   public static void main (String [] a) {
+      System.out.println(1);
+   }
+}
+
+---------------
+class Test {
+public static void main(String[] a) {
+System.out.println(((((((1)))))));}}
+vvvvvvvvvvvvvvv
+class Test{
+   public static void main (String [] a) {
+      System.out.println(1);
+   }
+}
+
+### END # TEST 10 ###
+### BEG # TEST 11 ###
+---------------
+class Test {
+public static void main(String[] a) {
+System.out.println(x);}}
+vvvvvvvvvvvvvvv
+class Test{
+   public static void main (String [] a) {
+      System.out.println(x);
+   }
+}
+
+---------------
+class Test {
+public static void main(String[] a) {
+System.out.println(y);}}
+vvvvvvvvvvvvvvv
+class Test{
+   public static void main (String [] a) {
+      System.out.println(y);
+   }
+}
+
+---------------
+class Test {
+public static void main(String[] a) {
+System.out.println(xy123);}}
+vvvvvvvvvvvvvvv
+class Test{
+   public static void main (String [] a) {
+      System.out.println(xy123);
+   }
+}
+
+---------------
+class Test {
+public static void main(String[] a) {
+System.out.println(x_y_123);}}
+vvvvvvvvvvvvvvv
+class Test{
+   public static void main (String [] a) {
+      System.out.println(x_y_123);
+   }
+}
+
+---------------
+class Test {
+public static void main(String[] a) {
+System.out.println(x_y_123);}}
+vvvvvvvvvvvvvvv
+class Test{
+   public static void main (String [] a) {
+      System.out.println(x_y_123);
+   }
+}
+
+### END # TEST 11 ###

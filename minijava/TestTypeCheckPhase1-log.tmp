@@ -1,0 +1,1894 @@
+### BEG # TEST 1 ###
+Table for File: sample\BinarySearch.java after phase 1
+Table {
+   BS = class {
+      fields {
+         number = int [] 
+         size = int 
+      }
+      methods {
+         Div = method {
+            symbols {
+               count02 = int 
+               num = int 
+               count01 = int 
+               this = BS 
+               aux03 = int 
+            }
+            returntype = int 
+         }
+         Print = method {
+            symbols {
+               this = BS 
+               j = int 
+            }
+            returntype = int 
+         }
+         Init = method {
+            symbols {
+               sz = int 
+               this = BS 
+               aux01 = int 
+               j = int 
+               k = int 
+               aux02 = int 
+            }
+            returntype = int 
+         }
+         Start = method {
+            symbols {
+               sz = int 
+               this = BS 
+               aux01 = int 
+               aux02 = int 
+            }
+            returntype = int 
+         }
+         Search = method {
+            symbols {
+               var_cont = boolean 
+               left = int 
+               nt = int 
+               num = int 
+               this = BS 
+               aux01 = int 
+               right = int 
+               medium = int 
+               bs01 = boolean 
+            }
+            returntype = boolean 
+         }
+         Compare = method {
+            symbols {
+               this = BS 
+               num1 = int 
+               aux02 = int 
+               retval = boolean 
+               num2 = int 
+            }
+            returntype = boolean 
+         }
+      }
+   }
+   BinarySearch = class {
+      fields {
+      }
+      methods {
+         main = method {
+            symbols {
+               this = BinarySearch 
+            }
+            returntype = null
+         }
+      }
+   }
+}
+Table for file: sample\BinarySearch.java after phase 2
+Table {
+   BS = class {
+      fields {
+         number = int [] 
+         size = int 
+      }
+      methods {
+         Div = method {
+            symbols {
+               count02 = int 
+               num = int 
+               count01 = int 
+               this = BS 
+               aux03 = int 
+            }
+            returntype = int 
+         }
+         Print = method {
+            symbols {
+               this = BS 
+               j = int 
+            }
+            returntype = int 
+         }
+         Init = method {
+            symbols {
+               sz = int 
+               this = BS 
+               aux01 = int 
+               j = int 
+               k = int 
+               aux02 = int 
+            }
+            returntype = int 
+         }
+         Start = method {
+            symbols {
+               sz = int 
+               this = BS 
+               aux01 = int 
+               aux02 = int 
+            }
+            returntype = int 
+         }
+         Search = method {
+            symbols {
+               var_cont = boolean 
+               left = int 
+               nt = int 
+               num = int 
+               this = BS 
+               aux01 = int 
+               right = int 
+               medium = int 
+               bs01 = boolean 
+            }
+            returntype = boolean 
+         }
+         Compare = method {
+            symbols {
+               this = BS 
+               num1 = int 
+               aux02 = int 
+               retval = boolean 
+               num2 = int 
+            }
+            returntype = boolean 
+         }
+      }
+   }
+   BinarySearch = class {
+      fields {
+      }
+      methods {
+         main = method {
+            symbols {
+               this = BinarySearch 
+            }
+            returntype = null
+         }
+      }
+   }
+}
+Table for File: sample\BinaryTree.java after phase 1
+Table {
+   BT = class {
+      fields {
+      }
+      methods {
+         Start = method {
+            symbols {
+               nti = int 
+               root = Tree 
+               this = BT 
+               ntb = boolean 
+            }
+            returntype = int 
+         }
+      }
+   }
+   BinaryTree = class {
+      fields {
+      }
+      methods {
+         main = method {
+            symbols {
+               this = BinaryTree 
+            }
+            returntype = null
+         }
+      }
+   }
+   Tree = class {
+      fields {
+         left = Tree 
+         has_right = boolean 
+         my_null = Tree 
+         right = Tree 
+         has_left = boolean 
+         key = int 
+      }
+      methods {
+         Delete = method {
+            symbols {
+               current_node = Tree 
+               found = boolean 
+               parent_node = Tree 
+               this = Tree 
+               cont = boolean 
+               is_root = boolean 
+               v_key = int 
+               ntb = boolean 
+               key_aux = int 
+            }
+            returntype = boolean 
+         }
+         SetHas_Left = method {
+            symbols {
+               val = boolean 
+               this = Tree 
+            }
+            returntype = boolean 
+         }
+         RemoveLeft = method {
+            symbols {
+               c_node = Tree 
+               this = Tree 
+               p_node = Tree 
+               ntb = boolean 
+            }
+            returntype = boolean 
+         }
+         GetKey = method {
+            symbols {
+               this = Tree 
+            }
+            returntype = int 
+         }
+         SetRight = method {
+            symbols {
+               this = Tree 
+               rn = Tree 
+            }
+            returntype = boolean 
+         }
+         GetLeft = method {
+            symbols {
+               this = Tree 
+            }
+            returntype = Tree 
+         }
+         GetRight = method {
+            symbols {
+               this = Tree 
+            }
+            returntype = Tree 
+         }
+         Remove = method {
+            symbols {
+               c_node = Tree 
+               auxkey1 = int 
+               auxkey2 = int 
+               this = Tree 
+               p_node = Tree 
+               ntb = boolean 
+            }
+            returntype = boolean 
+         }
+         SetLeft = method {
+            symbols {
+               ln = Tree 
+               this = Tree 
+            }
+            returntype = boolean 
+         }
+         Insert = method {
+            symbols {
+               current_node = Tree 
+               new_node = Tree 
+               this = Tree 
+               cont = boolean 
+               v_key = int 
+               ntb = boolean 
+               key_aux = int 
+            }
+            returntype = boolean 
+         }
+         Print = method {
+            symbols {
+               current_node = Tree 
+               this = Tree 
+               ntb = boolean 
+            }
+            returntype = boolean 
+         }
+         Init = method {
+            symbols {
+               this = Tree 
+               v_key = int 
+            }
+            returntype = boolean 
+         }
+         GetHas_Right = method {
+            symbols {
+               this = Tree 
+            }
+            returntype = boolean 
+         }
+         GetHas_Left = method {
+            symbols {
+               this = Tree 
+            }
+            returntype = boolean 
+         }
+         RemoveRight = method {
+            symbols {
+               c_node = Tree 
+               this = Tree 
+               p_node = Tree 
+               ntb = boolean 
+            }
+            returntype = boolean 
+         }
+         Search = method {
+            symbols {
+               current_node = Tree 
+               ifound = int 
+               this = Tree 
+               cont = boolean 
+               v_key = int 
+               key_aux = int 
+            }
+            returntype = int 
+         }
+         SetKey = method {
+            symbols {
+               this = Tree 
+               v_key = int 
+            }
+            returntype = boolean 
+         }
+         Compare = method {
+            symbols {
+               nti = int 
+               this = Tree 
+               num1 = int 
+               ntb = boolean 
+               num2 = int 
+            }
+            returntype = boolean 
+         }
+         SetHas_Right = method {
+            symbols {
+               val = boolean 
+               this = Tree 
+            }
+            returntype = boolean 
+         }
+         RecPrint = method {
+            symbols {
+               node = Tree 
+               this = Tree 
+               ntb = boolean 
+            }
+            returntype = boolean 
+         }
+      }
+   }
+}
+Table for file: sample\BinaryTree.java after phase 2
+Table {
+   BT = class {
+      fields {
+      }
+      methods {
+         Start = method {
+            symbols {
+               nti = int 
+               root = Tree 
+               this = BT 
+               ntb = boolean 
+            }
+            returntype = int 
+         }
+      }
+   }
+   BinaryTree = class {
+      fields {
+      }
+      methods {
+         main = method {
+            symbols {
+               this = BinaryTree 
+            }
+            returntype = null
+         }
+      }
+   }
+   Tree = class {
+      fields {
+         left = Tree 
+         has_right = boolean 
+         my_null = Tree 
+         right = Tree 
+         has_left = boolean 
+         key = int 
+      }
+      methods {
+         Delete = method {
+            symbols {
+               current_node = Tree 
+               found = boolean 
+               parent_node = Tree 
+               this = Tree 
+               cont = boolean 
+               is_root = boolean 
+               v_key = int 
+               ntb = boolean 
+               key_aux = int 
+            }
+            returntype = boolean 
+         }
+         SetHas_Left = method {
+            symbols {
+               val = boolean 
+               this = Tree 
+            }
+            returntype = boolean 
+         }
+         RemoveLeft = method {
+            symbols {
+               c_node = Tree 
+               this = Tree 
+               p_node = Tree 
+               ntb = boolean 
+            }
+            returntype = boolean 
+         }
+         GetKey = method {
+            symbols {
+               this = Tree 
+            }
+            returntype = int 
+         }
+         SetRight = method {
+            symbols {
+               this = Tree 
+               rn = Tree 
+            }
+            returntype = boolean 
+         }
+         GetLeft = method {
+            symbols {
+               this = Tree 
+            }
+            returntype = Tree 
+         }
+         GetRight = method {
+            symbols {
+               this = Tree 
+            }
+            returntype = Tree 
+         }
+         Remove = method {
+            symbols {
+               c_node = Tree 
+               auxkey1 = int 
+               auxkey2 = int 
+               this = Tree 
+               p_node = Tree 
+               ntb = boolean 
+            }
+            returntype = boolean 
+         }
+         SetLeft = method {
+            symbols {
+               ln = Tree 
+               this = Tree 
+            }
+            returntype = boolean 
+         }
+         Insert = method {
+            symbols {
+               current_node = Tree 
+               new_node = Tree 
+               this = Tree 
+               cont = boolean 
+               v_key = int 
+               ntb = boolean 
+               key_aux = int 
+            }
+            returntype = boolean 
+         }
+         Print = method {
+            symbols {
+               current_node = Tree 
+               this = Tree 
+               ntb = boolean 
+            }
+            returntype = boolean 
+         }
+         Init = method {
+            symbols {
+               this = Tree 
+               v_key = int 
+            }
+            returntype = boolean 
+         }
+         GetHas_Right = method {
+            symbols {
+               this = Tree 
+            }
+            returntype = boolean 
+         }
+         GetHas_Left = method {
+            symbols {
+               this = Tree 
+            }
+            returntype = boolean 
+         }
+         RemoveRight = method {
+            symbols {
+               c_node = Tree 
+               this = Tree 
+               p_node = Tree 
+               ntb = boolean 
+            }
+            returntype = boolean 
+         }
+         Search = method {
+            symbols {
+               current_node = Tree 
+               ifound = int 
+               this = Tree 
+               cont = boolean 
+               v_key = int 
+               key_aux = int 
+            }
+            returntype = int 
+         }
+         SetKey = method {
+            symbols {
+               this = Tree 
+               v_key = int 
+            }
+            returntype = boolean 
+         }
+         Compare = method {
+            symbols {
+               nti = int 
+               this = Tree 
+               num1 = int 
+               ntb = boolean 
+               num2 = int 
+            }
+            returntype = boolean 
+         }
+         SetHas_Right = method {
+            symbols {
+               val = boolean 
+               this = Tree 
+            }
+            returntype = boolean 
+         }
+         RecPrint = method {
+            symbols {
+               node = Tree 
+               this = Tree 
+               ntb = boolean 
+            }
+            returntype = boolean 
+         }
+      }
+   }
+}
+Table for File: sample\BubbleSort.java after phase 1
+Table {
+   BBS = class {
+      fields {
+         number = int [] 
+         size = int 
+      }
+      methods {
+         Print = method {
+            symbols {
+               this = BBS 
+               j = int 
+            }
+            returntype = int 
+         }
+         Init = method {
+            symbols {
+               sz = int 
+               this = BBS 
+            }
+            returntype = int 
+         }
+         Start = method {
+            symbols {
+               sz = int 
+               this = BBS 
+               aux01 = int 
+            }
+            returntype = int 
+         }
+         Sort = method {
+            symbols {
+               aux05 = int 
+               t = int 
+               aux04 = int 
+               nt = int 
+               aux07 = int 
+               aux06 = int 
+               this = BBS 
+               i = int 
+               j = int 
+               aux02 = int 
+            }
+            returntype = int 
+         }
+      }
+   }
+   BubbleSort = class {
+      fields {
+      }
+      methods {
+         main = method {
+            symbols {
+               this = BubbleSort 
+            }
+            returntype = null
+         }
+      }
+   }
+}
+Table for file: sample\BubbleSort.java after phase 2
+Table {
+   BBS = class {
+      fields {
+         number = int [] 
+         size = int 
+      }
+      methods {
+         Print = method {
+            symbols {
+               this = BBS 
+               j = int 
+            }
+            returntype = int 
+         }
+         Init = method {
+            symbols {
+               sz = int 
+               this = BBS 
+            }
+            returntype = int 
+         }
+         Start = method {
+            symbols {
+               sz = int 
+               this = BBS 
+               aux01 = int 
+            }
+            returntype = int 
+         }
+         Sort = method {
+            symbols {
+               aux05 = int 
+               t = int 
+               aux04 = int 
+               nt = int 
+               aux07 = int 
+               aux06 = int 
+               this = BBS 
+               i = int 
+               j = int 
+               aux02 = int 
+            }
+            returntype = int 
+         }
+      }
+   }
+   BubbleSort = class {
+      fields {
+      }
+      methods {
+         main = method {
+            symbols {
+               this = BubbleSort 
+            }
+            returntype = null
+         }
+      }
+   }
+}
+Table for File: sample\Factorial.java after phase 1
+Table {
+   Factorial = class {
+      fields {
+      }
+      methods {
+         main = method {
+            symbols {
+               this = Factorial 
+            }
+            returntype = null
+         }
+      }
+   }
+   Fac = class {
+      fields {
+      }
+      methods {
+         ComputeFac = method {
+            symbols {
+               num = int 
+               this = Fac 
+               num_aux = int 
+            }
+            returntype = int 
+         }
+      }
+   }
+}
+Table for file: sample\Factorial.java after phase 2
+Table {
+   Factorial = class {
+      fields {
+      }
+      methods {
+         main = method {
+            symbols {
+               this = Factorial 
+            }
+            returntype = null
+         }
+      }
+   }
+   Fac = class {
+      fields {
+      }
+      methods {
+         ComputeFac = method {
+            symbols {
+               num = int 
+               this = Fac 
+               num_aux = int 
+            }
+            returntype = int 
+         }
+      }
+   }
+}
+Table for File: sample\LinearSearch.java after phase 1
+Table {
+   LS = class {
+      fields {
+         number = int [] 
+         size = int 
+      }
+      methods {
+         Print = method {
+            symbols {
+               this = LS 
+               j = int 
+            }
+            returntype = int 
+         }
+         Init = method {
+            symbols {
+               sz = int 
+               this = LS 
+               aux01 = int 
+               j = int 
+               k = int 
+               aux02 = int 
+            }
+            returntype = int 
+         }
+         Start = method {
+            symbols {
+               sz = int 
+               this = LS 
+               aux01 = int 
+               aux02 = int 
+            }
+            returntype = int 
+         }
+         Search = method {
+            symbols {
+               nt = int 
+               num = int 
+               ifound = int 
+               this = LS 
+               aux01 = int 
+               j = int 
+               ls01 = boolean 
+               aux02 = int 
+            }
+            returntype = int 
+         }
+      }
+   }
+   LinearSearch = class {
+      fields {
+      }
+      methods {
+         main = method {
+            symbols {
+               this = LinearSearch 
+            }
+            returntype = null
+         }
+      }
+   }
+}
+Table for file: sample\LinearSearch.java after phase 2
+Table {
+   LS = class {
+      fields {
+         number = int [] 
+         size = int 
+      }
+      methods {
+         Print = method {
+            symbols {
+               this = LS 
+               j = int 
+            }
+            returntype = int 
+         }
+         Init = method {
+            symbols {
+               sz = int 
+               this = LS 
+               aux01 = int 
+               j = int 
+               k = int 
+               aux02 = int 
+            }
+            returntype = int 
+         }
+         Start = method {
+            symbols {
+               sz = int 
+               this = LS 
+               aux01 = int 
+               aux02 = int 
+            }
+            returntype = int 
+         }
+         Search = method {
+            symbols {
+               nt = int 
+               num = int 
+               ifound = int 
+               this = LS 
+               aux01 = int 
+               j = int 
+               ls01 = boolean 
+               aux02 = int 
+            }
+            returntype = int 
+         }
+      }
+   }
+   LinearSearch = class {
+      fields {
+      }
+      methods {
+         main = method {
+            symbols {
+               this = LinearSearch 
+            }
+            returntype = null
+         }
+      }
+   }
+}
+Table for File: sample\LinkedList.java after phase 1
+Table {
+   LL = class {
+      fields {
+      }
+      methods {
+         Start = method {
+            symbols {
+               head = List 
+               last_elem = List 
+               el03 = Element 
+               el02 = Element 
+               el01 = Element 
+               this = LL 
+               aux01 = boolean 
+            }
+            returntype = int 
+         }
+      }
+   }
+   Element = class {
+      fields {
+         Salary = int 
+         Married = boolean 
+         Age = int 
+      }
+      methods {
+         GetSalary = method {
+            symbols {
+               this = Element 
+            }
+            returntype = int 
+         }
+         Init = method {
+            symbols {
+               v_Salary = int 
+               v_Married = boolean 
+               this = Element 
+               v_Age = int 
+            }
+            returntype = boolean 
+         }
+         GetAge = method {
+            symbols {
+               this = Element 
+            }
+            returntype = int 
+         }
+         Equal = method {
+            symbols {
+               other = Element 
+               nt = int 
+               this = Element 
+               aux01 = int 
+               aux02 = int 
+               ret_val = boolean 
+            }
+            returntype = boolean 
+         }
+         GetMarried = method {
+            symbols {
+               this = Element 
+            }
+            returntype = boolean 
+         }
+         Compare = method {
+            symbols {
+               this = Element 
+               num1 = int 
+               aux02 = int 
+               retval = boolean 
+               num2 = int 
+            }
+            returntype = boolean 
+         }
+      }
+   }
+   List = class {
+      fields {
+         elem = Element 
+         next = List 
+         end = boolean 
+      }
+      methods {
+         Delete = method {
+            symbols {
+               aux05 = boolean 
+               e = Element 
+               aux04 = int 
+               nt = int 
+               prev = List 
+               this = List 
+               aux01 = List 
+               var_end = boolean 
+               ret_val = boolean 
+               my_head = List 
+               var_elem = Element 
+            }
+            returntype = List 
+         }
+         Print = method {
+            symbols {
+               this = List 
+               aux01 = List 
+               var_end = boolean 
+               var_elem = Element 
+            }
+            returntype = boolean 
+         }
+         Init = method {
+            symbols {
+               this = List 
+            }
+            returntype = boolean 
+         }
+         GetElem = method {
+            symbols {
+               this = List 
+            }
+            returntype = Element 
+         }
+         GetNext = method {
+            symbols {
+               this = List 
+            }
+            returntype = List 
+         }
+         SetNext = method {
+            symbols {
+               v_next = List 
+               this = List 
+            }
+            returntype = boolean 
+         }
+         Search = method {
+            symbols {
+               e = Element 
+               nt = int 
+               this = List 
+               aux01 = List 
+               var_end = boolean 
+               int_ret_val = int 
+               var_elem = Element 
+            }
+            returntype = int 
+         }
+         GetEnd = method {
+            symbols {
+               this = List 
+            }
+            returntype = boolean 
+         }
+         InitNew = method {
+            symbols {
+               v_next = List 
+               this = List 
+               v_end = boolean 
+               v_elem = Element 
+            }
+            returntype = boolean 
+         }
+         Insert = method {
+            symbols {
+               this = List 
+               aux03 = List 
+               aux02 = List 
+               ret_val = boolean 
+               new_elem = Element 
+            }
+            returntype = List 
+         }
+      }
+   }
+   LinkedList = class {
+      fields {
+      }
+      methods {
+         main = method {
+            symbols {
+               this = LinkedList 
+            }
+            returntype = null
+         }
+      }
+   }
+}
+Table for file: sample\LinkedList.java after phase 2
+Table {
+   LL = class {
+      fields {
+      }
+      methods {
+         Start = method {
+            symbols {
+               head = List 
+               last_elem = List 
+               el03 = Element 
+               el02 = Element 
+               el01 = Element 
+               this = LL 
+               aux01 = boolean 
+            }
+            returntype = int 
+         }
+      }
+   }
+   Element = class {
+      fields {
+         Salary = int 
+         Married = boolean 
+         Age = int 
+      }
+      methods {
+         GetSalary = method {
+            symbols {
+               this = Element 
+            }
+            returntype = int 
+         }
+         Init = method {
+            symbols {
+               v_Salary = int 
+               v_Married = boolean 
+               this = Element 
+               v_Age = int 
+            }
+            returntype = boolean 
+         }
+         GetAge = method {
+            symbols {
+               this = Element 
+            }
+            returntype = int 
+         }
+         Equal = method {
+            symbols {
+               other = Element 
+               nt = int 
+               this = Element 
+               aux01 = int 
+               aux02 = int 
+               ret_val = boolean 
+            }
+            returntype = boolean 
+         }
+         GetMarried = method {
+            symbols {
+               this = Element 
+            }
+            returntype = boolean 
+         }
+         Compare = method {
+            symbols {
+               this = Element 
+               num1 = int 
+               aux02 = int 
+               retval = boolean 
+               num2 = int 
+            }
+            returntype = boolean 
+         }
+      }
+   }
+   List = class {
+      fields {
+         elem = Element 
+         next = List 
+         end = boolean 
+      }
+      methods {
+         Delete = method {
+            symbols {
+               aux05 = boolean 
+               e = Element 
+               aux04 = int 
+               nt = int 
+               prev = List 
+               this = List 
+               aux01 = List 
+               var_end = boolean 
+               ret_val = boolean 
+               my_head = List 
+               var_elem = Element 
+            }
+            returntype = List 
+         }
+         Print = method {
+            symbols {
+               this = List 
+               aux01 = List 
+               var_end = boolean 
+               var_elem = Element 
+            }
+            returntype = boolean 
+         }
+         Init = method {
+            symbols {
+               this = List 
+            }
+            returntype = boolean 
+         }
+         GetElem = method {
+            symbols {
+               this = List 
+            }
+            returntype = Element 
+         }
+         GetNext = method {
+            symbols {
+               this = List 
+            }
+            returntype = List 
+         }
+         SetNext = method {
+            symbols {
+               v_next = List 
+               this = List 
+            }
+            returntype = boolean 
+         }
+         Search = method {
+            symbols {
+               e = Element 
+               nt = int 
+               this = List 
+               aux01 = List 
+               var_end = boolean 
+               int_ret_val = int 
+               var_elem = Element 
+            }
+            returntype = int 
+         }
+         GetEnd = method {
+            symbols {
+               this = List 
+            }
+            returntype = boolean 
+         }
+         InitNew = method {
+            symbols {
+               v_next = List 
+               this = List 
+               v_end = boolean 
+               v_elem = Element 
+            }
+            returntype = boolean 
+         }
+         Insert = method {
+            symbols {
+               this = List 
+               aux03 = List 
+               aux02 = List 
+               ret_val = boolean 
+               new_elem = Element 
+            }
+            returntype = List 
+         }
+      }
+   }
+   LinkedList = class {
+      fields {
+      }
+      methods {
+         main = method {
+            symbols {
+               this = LinkedList 
+            }
+            returntype = null
+         }
+      }
+   }
+}
+Table for File: sample\QuickSort.java after phase 1
+Table {
+   QuickSort = class {
+      fields {
+      }
+      methods {
+         main = method {
+            symbols {
+               this = QuickSort 
+            }
+            returntype = null
+         }
+      }
+   }
+   QS = class {
+      fields {
+         number = int [] 
+         size = int 
+      }
+      methods {
+         Print = method {
+            symbols {
+               this = QS 
+               j = int 
+            }
+            returntype = int 
+         }
+         Init = method {
+            symbols {
+               sz = int 
+               this = QS 
+            }
+            returntype = int 
+         }
+         Start = method {
+            symbols {
+               sz = int 
+               this = QS 
+               aux01 = int 
+            }
+            returntype = int 
+         }
+         Sort = method {
+            symbols {
+               t = int 
+               left = int 
+               v = int 
+               nt = int 
+               this = QS 
+               i = int 
+               j = int 
+               aux03 = int 
+               right = int 
+               cont02 = boolean 
+               cont01 = boolean 
+            }
+            returntype = int 
+         }
+      }
+   }
+}
+Table for file: sample\QuickSort.java after phase 2
+Table {
+   QuickSort = class {
+      fields {
+      }
+      methods {
+         main = method {
+            symbols {
+               this = QuickSort 
+            }
+            returntype = null
+         }
+      }
+   }
+   QS = class {
+      fields {
+         number = int [] 
+         size = int 
+      }
+      methods {
+         Print = method {
+            symbols {
+               this = QS 
+               j = int 
+            }
+            returntype = int 
+         }
+         Init = method {
+            symbols {
+               sz = int 
+               this = QS 
+            }
+            returntype = int 
+         }
+         Start = method {
+            symbols {
+               sz = int 
+               this = QS 
+               aux01 = int 
+            }
+            returntype = int 
+         }
+         Sort = method {
+            symbols {
+               t = int 
+               left = int 
+               v = int 
+               nt = int 
+               this = QS 
+               i = int 
+               j = int 
+               aux03 = int 
+               right = int 
+               cont02 = boolean 
+               cont01 = boolean 
+            }
+            returntype = int 
+         }
+      }
+   }
+}
+Table for File: sample\TreeVisitor.java after phase 1
+Table {
+   TreeVisitor = class {
+      fields {
+      }
+      methods {
+         main = method {
+            symbols {
+               this = TreeVisitor 
+            }
+            returntype = null
+         }
+      }
+   }
+   TV = class {
+      fields {
+      }
+      methods {
+         Start = method {
+            symbols {
+               nti = int 
+               v = MyVisitor 
+               root = Tree 
+               this = TV 
+               ntb = boolean 
+            }
+            returntype = int 
+         }
+      }
+   }
+   Visitor = class {
+      fields {
+         r = Tree 
+         l = Tree 
+      }
+      methods {
+         leftKey = method {
+            symbols {
+               this = Visitor 
+            }
+            returntype = int 
+         }
+         visit = method {
+            symbols {
+               nti = int 
+               this = Visitor 
+               n = Tree 
+            }
+            returntype = int 
+         }
+      }
+   }
+   Tree = class {
+      fields {
+         left = Tree 
+         has_right = boolean 
+         my_null = Tree 
+         right = Tree 
+         has_left = boolean 
+         key = int 
+      }
+      methods {
+         Delete = method {
+            symbols {
+               current_node = Tree 
+               found = boolean 
+               parent_node = Tree 
+               this = Tree 
+               cont = boolean 
+               is_root = boolean 
+               v_key = int 
+               ntb = boolean 
+               key_aux = int 
+            }
+            returntype = boolean 
+         }
+         SetHas_Left = method {
+            symbols {
+               val = boolean 
+               this = Tree 
+            }
+            returntype = boolean 
+         }
+         RemoveLeft = method {
+            symbols {
+               c_node = Tree 
+               this = Tree 
+               p_node = Tree 
+               ntb = boolean 
+            }
+            returntype = boolean 
+         }
+         GetKey = method {
+            symbols {
+               this = Tree 
+            }
+            returntype = int 
+         }
+         SetRight = method {
+            symbols {
+               this = Tree 
+               rn = Tree 
+            }
+            returntype = boolean 
+         }
+         GetLeft = method {
+            symbols {
+               this = Tree 
+            }
+            returntype = Tree 
+         }
+         GetRight = method {
+            symbols {
+               this = Tree 
+            }
+            returntype = Tree 
+         }
+         Remove = method {
+            symbols {
+               c_node = Tree 
+               auxkey1 = int 
+               auxkey2 = int 
+               this = Tree 
+               p_node = Tree 
+               ntb = boolean 
+            }
+            returntype = boolean 
+         }
+         SetLeft = method {
+            symbols {
+               ln = Tree 
+               this = Tree 
+            }
+            returntype = boolean 
+         }
+         Insert = method {
+            symbols {
+               current_node = Tree 
+               new_node = Tree 
+               this = Tree 
+               cont = boolean 
+               v_key = int 
+               ntb = boolean 
+               key_aux = int 
+            }
+            returntype = boolean 
+         }
+         accept = method {
+            symbols {
+               nti = int 
+               v = Visitor 
+               this = Tree 
+            }
+            returntype = int 
+         }
+         Print = method {
+            symbols {
+               current_node = Tree 
+               this = Tree 
+               ntb = boolean 
+            }
+            returntype = boolean 
+         }
+         Init = method {
+            symbols {
+               this = Tree 
+               v_key = int 
+            }
+            returntype = boolean 
+         }
+         GetHas_Right = method {
+            symbols {
+               this = Tree 
+            }
+            returntype = boolean 
+         }
+         GetHas_Left = method {
+            symbols {
+               this = Tree 
+            }
+            returntype = boolean 
+         }
+         RemoveRight = method {
+            symbols {
+               c_node = Tree 
+               this = Tree 
+               p_node = Tree 
+               ntb = boolean 
+            }
+            returntype = boolean 
+         }
+         Search = method {
+            symbols {
+               current_node = Tree 
+               ifound = int 
+               this = Tree 
+               cont = boolean 
+               v_key = int 
+               key_aux = int 
+            }
+            returntype = int 
+         }
+         SetKey = method {
+            symbols {
+               this = Tree 
+               v_key = int 
+            }
+            returntype = boolean 
+         }
+         Compare = method {
+            symbols {
+               nti = int 
+               this = Tree 
+               num1 = int 
+               ntb = boolean 
+               num2 = int 
+            }
+            returntype = boolean 
+         }
+         SetHas_Right = method {
+            symbols {
+               val = boolean 
+               this = Tree 
+            }
+            returntype = boolean 
+         }
+         RecPrint = method {
+            symbols {
+               node = Tree 
+               this = Tree 
+               ntb = boolean 
+            }
+            returntype = boolean 
+         }
+      }
+   }
+   MyVisitor = class {
+      super = Visitor
+      fields {
+         r = Tree 
+         l = Tree 
+      }
+      methods {
+         visit = method {
+            symbols {
+               nti = int 
+               this = MyVisitor 
+               n = Tree 
+            }
+            returntype = int 
+         }
+      }
+   }
+}
+Table for file: sample\TreeVisitor.java after phase 2
+Table {
+   TreeVisitor = class {
+      fields {
+      }
+      methods {
+         main = method {
+            symbols {
+               this = TreeVisitor 
+            }
+            returntype = null
+         }
+      }
+   }
+   TV = class {
+      fields {
+      }
+      methods {
+         Start = method {
+            symbols {
+               nti = int 
+               v = MyVisitor 
+               root = Tree 
+               this = TV 
+               ntb = boolean 
+            }
+            returntype = int 
+         }
+      }
+   }
+   Visitor = class {
+      fields {
+         r = Tree 
+         l = Tree 
+      }
+      methods {
+         leftKey = method {
+            symbols {
+               this = Visitor 
+            }
+            returntype = int 
+         }
+         visit = method {
+            symbols {
+               nti = int 
+               this = Visitor 
+               n = Tree 
+            }
+            returntype = int 
+         }
+      }
+   }
+   Tree = class {
+      fields {
+         left = Tree 
+         has_right = boolean 
+         my_null = Tree 
+         right = Tree 
+         has_left = boolean 
+         key = int 
+      }
+      methods {
+         Delete = method {
+            symbols {
+               current_node = Tree 
+               found = boolean 
+               parent_node = Tree 
+               this = Tree 
+               cont = boolean 
+               is_root = boolean 
+               v_key = int 
+               ntb = boolean 
+               key_aux = int 
+            }
+            returntype = boolean 
+         }
+         SetHas_Left = method {
+            symbols {
+               val = boolean 
+               this = Tree 
+            }
+            returntype = boolean 
+         }
+         RemoveLeft = method {
+            symbols {
+               c_node = Tree 
+               this = Tree 
+               p_node = Tree 
+               ntb = boolean 
+            }
+            returntype = boolean 
+         }
+         GetKey = method {
+            symbols {
+               this = Tree 
+            }
+            returntype = int 
+         }
+         SetRight = method {
+            symbols {
+               this = Tree 
+               rn = Tree 
+            }
+            returntype = boolean 
+         }
+         GetLeft = method {
+            symbols {
+               this = Tree 
+            }
+            returntype = Tree 
+         }
+         GetRight = method {
+            symbols {
+               this = Tree 
+            }
+            returntype = Tree 
+         }
+         Remove = method {
+            symbols {
+               c_node = Tree 
+               auxkey1 = int 
+               auxkey2 = int 
+               this = Tree 
+               p_node = Tree 
+               ntb = boolean 
+            }
+            returntype = boolean 
+         }
+         SetLeft = method {
+            symbols {
+               ln = Tree 
+               this = Tree 
+            }
+            returntype = boolean 
+         }
+         Insert = method {
+            symbols {
+               current_node = Tree 
+               new_node = Tree 
+               this = Tree 
+               cont = boolean 
+               v_key = int 
+               ntb = boolean 
+               key_aux = int 
+            }
+            returntype = boolean 
+         }
+         accept = method {
+            symbols {
+               nti = int 
+               v = Visitor 
+               this = Tree 
+            }
+            returntype = int 
+         }
+         Print = method {
+            symbols {
+               current_node = Tree 
+               this = Tree 
+               ntb = boolean 
+            }
+            returntype = boolean 
+         }
+         Init = method {
+            symbols {
+               this = Tree 
+               v_key = int 
+            }
+            returntype = boolean 
+         }
+         GetHas_Right = method {
+            symbols {
+               this = Tree 
+            }
+            returntype = boolean 
+         }
+         GetHas_Left = method {
+            symbols {
+               this = Tree 
+            }
+            returntype = boolean 
+         }
+         RemoveRight = method {
+            symbols {
+               c_node = Tree 
+               this = Tree 
+               p_node = Tree 
+               ntb = boolean 
+            }
+            returntype = boolean 
+         }
+         Search = method {
+            symbols {
+               current_node = Tree 
+               ifound = int 
+               this = Tree 
+               cont = boolean 
+               v_key = int 
+               key_aux = int 
+            }
+            returntype = int 
+         }
+         SetKey = method {
+            symbols {
+               this = Tree 
+               v_key = int 
+            }
+            returntype = boolean 
+         }
+         Compare = method {
+            symbols {
+               nti = int 
+               this = Tree 
+               num1 = int 
+               ntb = boolean 
+               num2 = int 
+            }
+            returntype = boolean 
+         }
+         SetHas_Right = method {
+            symbols {
+               val = boolean 
+               this = Tree 
+            }
+            returntype = boolean 
+         }
+         RecPrint = method {
+            symbols {
+               node = Tree 
+               this = Tree 
+               ntb = boolean 
+            }
+            returntype = boolean 
+         }
+      }
+   }
+   MyVisitor = class {
+      super = Visitor
+      fields {
+         r = Tree 
+         l = Tree 
+      }
+      methods {
+         leftKey = method {
+            symbols {
+               this = Visitor 
+            }
+            returntype = int 
+         }
+         visit = method {
+            symbols {
+               nti = int 
+               this = MyVisitor 
+               n = Tree 
+            }
+            returntype = int 
+         }
+      }
+   }
+}
+### END # TEST 1 ###
